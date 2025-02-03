@@ -2,8 +2,6 @@
 import StudentCard from "./StudentCard.jsx";
 
 export default function StudentCardList({ students }) {
-    console.log("Data recibida en StudentCardList:", students);
-
     return (
         <div className="flex flex-wrap gap-6 justify-center">
             {students.map((student) => (

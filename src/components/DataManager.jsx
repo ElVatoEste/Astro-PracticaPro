@@ -17,7 +17,7 @@ export default function StudentDataManager() {
 
     async function fetchAndCache() {
         try {
-            const res = await fetch("http://localhost:3000/notas/info");
+            const res = await fetch("https://practica-pro-back.vercel.app/notas/info");
             if (res.ok) {
                 const json = await res.json();
                 // Agrupar la información por usuario
@@ -73,7 +73,6 @@ export default function StudentDataManager() {
         }
 
         setStudents(data);
-        console.log("Data actualizada:", data);
     }
 
     useEffect(() => {
