@@ -1,22 +1,46 @@
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang="es">
+<head>
+	<!-- Caracteres, viewport y favicon -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+	<!-- Generador y título -->
+	<meta name="generator" content={Astro.generator} />
+	<title>PracticaPro - Notas de Estudiantes | UAM</title>
+
+	<!-- Meta descripción y keywords -->
+	<meta name="description" content="PracticaPro es la aplicación oficial para consultar las notas de los estudiantes de la Universidad Americana (UAM). Revisa tu rendimiento académico de forma rápida y sencilla. Descubre más en vatodev.xyz." />
+	<meta name="keywords" content="PracticaPro, UAM, Universidad Americana, notas, estudiantes, resultados académicos, vatodev.xyz" />
+	<meta name="author" content="VatoDev" />
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:title" content="PracticaPro - Notas de Estudiantes | UAM" />
+	<meta property="og:description" content="Accede a PracticaPro, la plataforma oficial de la UAM para consultar las notas y resultados académicos de los estudiantes. Visita vatodev.xyz para más información." />
+	<meta property="og:image" content="https://vatodev.xyz/og-image.png" />
+	<meta property="og:url" content="https://vatodev.xyz" />
+	<meta property="og:type" content="website" />
+
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@vatodev" />
+	<meta name="twitter:title" content="PracticaPro - Notas de Estudiantes | UAM" />
+	<meta name="twitter:description" content="Consulta tus notas en PracticaPro, la plataforma oficial de la UAM para resultados académicos. Conoce más en vatodev.xyz." />
+	<meta name="twitter:image" content="https://vatodev.xyz/og-image.png" />
+</head>
+<body class="bg-gray-50 text-gray-900">
+<slot />
+</body>
 </html>
 
 <style>
 	html,
 	body {
 		margin: 0;
+		padding: 0;
 		width: 100%;
 		height: 100%;
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	}
 </style>

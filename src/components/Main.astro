@@ -1,0 +1,27 @@
+---
+import background from '../assets/background.svg';
+import StudentDataManager from '../components/DataManager.jsx';
+---
+
+<div class="relative min-h-screen">
+	<!-- Imagen de fondo ocupando toda la pantalla -->
+	<img
+		src={background.src}
+		alt="Fondo"
+		fetchpriority="high"
+		class="absolute inset-0 w-full h-full object-cover"
+	/>
+
+	<!-- Contenedor del contenido, posicionado sobre el fondo -->
+	<div class="relative z-10">
+		<main class="container mx-auto px-4 py-8">
+			<section id="student-cards" class="mt-8">
+				<h2 class="text-center text-2xl font-bold mb-4 text-primary">
+					Lista de Estudiantes
+				</h2>
+				<!-- Componente que gestiona la data y renderiza la lista de tarjetas -->
+				<StudentDataManager client:load />
+			</section>
+		</main>
+	</div>
+</div>
